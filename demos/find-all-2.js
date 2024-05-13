@@ -8,23 +8,23 @@ let menuItems = [
   { id: 5, item: "Coke", category: "Drink", price: 2.29 },
 ];
 
-function find4(item) {
-  if(item.id == 4){
+
+function isThisItemADrink(item) {
+  if (item.category == "Drink") {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
 
-let foundItem = menuItems.find(find4);
+let matchingItems = menuItems.filter(isThisItemADrink);
 
-// let foundItem;
+// let matchingItems = [];
 
 // for (const item of menuItems) {
-//     if(item.id== 4){
-//         foundItem = item;
-//         break;
-//     }
+//   if (item.category == "Drink") {
+//     matchingItems.push(item);
+//   }
 // }
 
-console.log(foundItem);
+console.log(matchingItems);

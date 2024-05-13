@@ -68,7 +68,13 @@ let prog200Course1 = courses.find((course) => course.CourseId == "PROG200");
 console.log(prog200Course1.StartDate);
 
 // What is the title of the PROJ500 course?
-let proj500Course = courses.find(course => course.CourseId == "PROJ500");
+// function isPROJ500(course) {
+//   return course.CourseId == "PROJ500";
+// } //function declaration
+// (course) => course.CourseId == "PROJ500"; //arrow function
+
+// let proj500Course = courses.find(isPROJ500);
+let proj500Course = courses.find((course) => course.CourseId == "PROJ500");
 console.log(proj500Course.Title);
 
 // What are the titles of the courses that cost $50 or less?

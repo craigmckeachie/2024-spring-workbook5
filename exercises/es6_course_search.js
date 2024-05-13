@@ -38,6 +38,10 @@ let courses = [
   },
 ];
 
+function myFunction(params) {
+  
+}
+
 // When does the PROG200 course start?
 function isPROG200(course) {
   if (course.CourseId == "PROG200") {

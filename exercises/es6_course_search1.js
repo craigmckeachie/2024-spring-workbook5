@@ -47,9 +47,9 @@ let proj500Course = courses.find((course) => course.CourseId == "PROJ500");
 console.log(proj500Course.Title);
 
 // What are the titles of the courses that cost $50 or less?
-// let cheapCourseTitles = 
-// console.log(cheapCourseTitles);
+let cheapCourseTitles = courses.filter((course) => Number(course.Fee) <= 50).map((course) => course.Title);
+console.log(cheapCourseTitles);
 
 // // What classes meet in "Classroom 1"?
-// let classesInClassroom1 = console.log(cheapCourseTitles);
-// console.log(classesInClassroom1);
+// let coursesInClassroom1 = console.log(cheapCourseTitles);
+// console.log(coursesInClassroom1);

@@ -38,21 +38,34 @@ let courses = [
   },
 ];
 
-function myFunction(params) {
-  
-}
-
 // When does the PROG200 course start?
-function isPROG200(course) {
+
+//1. loop with if
+for (const course of courses) {
   if (course.CourseId == "PROG200") {
-    return true;
-  } else {
-    return false;
+    console.log(course.StartDate);
   }
 }
 
+//2. use find to loop and isolate if condition in function
+// function isPROG200(course) {
+//   if (course.CourseId == "PROG200") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+function isPROG200(course) {
+  return course.CourseId == "PROG200";
+}
+
 let prog200Course = courses.find(isPROG200);
-console.log(prog200Course);
+console.log(prog200Course.StartDate);
+
+//3. Use find to loop and shorter arrow function syntax
+let prog200Course1 = courses.find((course) => course.CourseId == "PROG200");
+console.log(prog200Course1.StartDate);
 
 // What is the title of the PROJ500 course?
 

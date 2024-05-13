@@ -39,7 +39,18 @@ let courses = [
 ];
 
 // When does the PROG200 course start?
+function isPROG200(course) {
+  if (course.CourseId == "PROG200") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let prog200Course = courses.find(isPROG200);
+console.log(prog200Course);
 
 // What is the title of the PROJ500 course?
+
 // What are the titles of the courses that cost $50 or less?
 // What classes meet in "Classroom 1"?

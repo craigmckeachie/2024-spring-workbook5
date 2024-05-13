@@ -1,5 +1,8 @@
 "use strict";
 
+
+
+
 let kids = [
   { first: "Natalie", last: "Plyers" },
   { first: "Brittany", last: "Ray" },

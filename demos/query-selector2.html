@@ -13,6 +13,7 @@
 
     <div class="alert">This is an alert!</div>
     <div class="alert">This is another alert!</div>
+    <img src="" class="imgBordered one two three four" />
 
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse
@@ -35,15 +36,25 @@
     <script>
       "use strict";
 
-      let heading3 = document.querySelector("#heading3");
+      // function $(selector) {
+      //   return document.querySelector(selector);
+      // }
+
+      const $ = (selector) => document.querySelector(selector);
+
+      function $$(selector) {
+        return document.querySelectorAll(selector);
+      }
+
+      let heading3 = $("#heading3");
       heading3.innerText = "Query Selector Use Cases";
       heading3.style.color = "purple";
       heading3.style.textTransform = "uppercase";
 
-      let div = document.querySelector(".alert");
+      let div = $$(".alert");
       console.log(div);
 
-      let alertDivs = document.querySelectorAll(".alert");
+      let alertDivs = $$(".alert");
       console.log(alertDivs);
 
       for (const alertDiv of alertDivs) {
@@ -51,7 +62,7 @@
         alertDiv.style.padding = "1rem";
       }
 
-      let paragraphs = document.querySelectorAll("p");
+      let paragraphs = $$("p");
 
       for (const p of paragraphs) {
         p.style.backgroundColor = "yellow";

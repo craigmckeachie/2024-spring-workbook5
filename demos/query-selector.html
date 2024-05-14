@@ -7,6 +7,7 @@
   </head>
   <body>
     <h3 id="heading3">Query Selector Examples</h3>
+    <div class="alert">This is an alert!</div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse
       porro. Explicabo autem magnam delectus debitis doloremque repudiandae quia
@@ -31,6 +32,9 @@
       // let heading3 = document.getElementById("heading3");
       // console.log(heading3);
 
+    //   let alertDivs = document.getElementsByClassName("alert");
+    //   console.log(alertDivs);
+
       // let paragraphs = document.getElementsByTagName("p");
       // console.log(paragraphs);
 
@@ -38,13 +42,15 @@
       let heading3 = document.querySelector("#heading3");
       console.log(heading3);
 
+      let alertDivs = document.querySelectorAll(".alert");
+      console.log(alertDivs);
+
       let paragraphs = document.querySelectorAll("p");
-      console.log(paragraphs);  
+      console.log(paragraphs);
 
       //# queries by id
       //. queries by class
       // tagname queries by tagname
-
     </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 "use strict";
 
-let cart = [
+let products = [
   { item: "Bread", price: 3.29, quantity: 2 },
   { item: "Milk", price: 4.09, quantity: 1 },
   { item: "T-Bone Steak", price: 12.99, quantity: 2 },
@@ -9,3 +9,10 @@ let cart = [
   { item: "Ice Cream - Vanilla", price: 6.81, quantity: 1 },
   { item: "Apples", price: 0.66, quantity: 6 },
 ];
+
+let productNames = [];
+for (const product of products) {
+  productNames.push(product.item);
+}
+
+console.log(productNames);

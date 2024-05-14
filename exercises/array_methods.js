@@ -10,9 +10,17 @@ let products = [
   { item: "Apples", price: 0.66, quantity: 6 },
 ];
 
-let productNames = [];
-for (const product of products) {
-  productNames.push(product.item);
+//secret stuff happening inside map
+// let productNames = [];
+// for (const product of products) {
+//   productNames.push(product.item);
+// }
+//return productNames
+
+function getProductName(product) {
+    return product.item;
 }
+
+let productNames = products.map(getProductName)
 
 console.log(productNames);

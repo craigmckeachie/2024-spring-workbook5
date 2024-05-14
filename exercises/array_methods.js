@@ -17,10 +17,14 @@ let products = [
 // }
 //return productNames
 
-function getProductName(product) {
-    return product.item;
-}
+// let productNames = products.map(function getProductName(product) {
+//   return product.item;
+// });
 
-let productNames = products.map(getProductName)
+let productNames = products.map((product) => product.item);
 
-console.log(productNames);
+// productNames.forEach(function print(productName) {
+//   console.log(productName);
+// });
+
+productNames.forEach((productName) => console.log(productName));

@@ -17,9 +17,12 @@ console.log(mmCandies);
 
 // Do we carry "Swedish Fish"?
 const swedishFish = products.find((p) => p.product == "Swedish Fish");
+
 let answer = "Ask again later.";
 if (swedishFish) {
   console.log("Yes, we carry the delicious fishes.");
 } else {
     console.log("No, we do not have Swedish Fish.");
 }
+
+

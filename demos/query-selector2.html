@@ -10,10 +10,10 @@
     <img src="" />
     <img src="" alt="" />
     <h3 id="heading3">Query Selector Examples</h3>
-    
+
     <div class="alert">This is an alert!</div>
     <div class="alert">This is another alert!</div>
-    
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse
       porro. Explicabo autem magnam delectus debitis doloremque repudiandae quia
@@ -40,6 +40,9 @@
       heading3.style.color = "purple";
       heading3.style.textTransform = "uppercase";
 
+      let div = document.querySelector(".alert");
+      console.log(div);
+
       let alertDivs = document.querySelectorAll(".alert");
       console.log(alertDivs);
 
@@ -49,7 +52,10 @@
       }
 
       let paragraphs = document.querySelectorAll("p");
-      console.log(paragraphs);
+
+      for (const p of paragraphs) {
+        p.style.backgroundColor = "yellow";
+      }
 
       //# queries by id
       //. queries by class

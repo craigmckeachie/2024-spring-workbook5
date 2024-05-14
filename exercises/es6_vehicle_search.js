@@ -6,7 +6,7 @@ let vehicles = [
     type: "Minivan",
     registrationState: "CA",
     licenseNo: "ABC-101",
-    registrationExpires: new Date("3-10-2022"),
+    registrationExpires: new Date("3-10-2023"),
     capacity: 7,
   },
   {
@@ -68,6 +68,18 @@ let vehicles = [
 ];
 
 // Which vehicles are RED?
+const redVehicles = vehicles.filter((v) => v.color.toLowerCase() == "red");
+console.log(redVehicles);
+
 // Which vehicles have registrations that are expired?
+let today = new Date();
+const expiredVehicles = vehicles.filter((v) => v.registrationExpires < today);
+console.log(expiredVehicles);
+
 // Which vehicles that hold at least 6 people?
+const bigVehicles = vehicles.filter((v) => v.capacity >= 6);
+console.log(bigVehicles);
+
 // Which vehicles have license plates that end with "222"?
+const plate222Vehicles = vehicles.filter((v) => v.licenseNo.endsWith("222"));
+console.log(plate222Vehicles);

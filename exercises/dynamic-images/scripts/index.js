@@ -55,16 +55,22 @@ let imageFiles = [
   },
 ];
 
+// the anonymous function assigned to onload gets called when the html for the page is done loading
 window.onload = function () {
   //get all html elements into variables
-  const imageFileDropdown = document.querySelector("#imageFileDropdown");
+  //the variable names should always end with what kind of HTML Element is being put into the variable
+  const imageFileDropdown = document.querySelector("#imageFileDropdown"); //# means id
   const addImageButton = document.querySelector("#addImageButton");
   const clearImagesButton = document.querySelector("#clearImagesButton");
   const imageContainerDiv = document.querySelector("#imageContainerDiv");
 
   //define  your functions
 
+  //function that loads the image file dropdown 
+  //using the array of imageFile objects
+  //the id should b
   function loadImageFileDropdown() {
+
     for (const imageFile of imageFiles) {
       let option = document.createElement("option");
       option.value = imageFile.id;

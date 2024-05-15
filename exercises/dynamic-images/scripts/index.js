@@ -65,12 +65,7 @@ window.onload = function () {
   const imageContainerDiv = document.querySelector("#imageContainerDiv");
 
   //define  your functions
-
-  //function that loads the image file dropdown 
-  //using the array of imageFile objects
-  //the id should b
   function loadImageFileDropdown() {
-
     for (const imageFile of imageFiles) {
       let option = document.createElement("option");
       option.value = imageFile.id;

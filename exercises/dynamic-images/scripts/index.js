@@ -55,9 +55,40 @@ let imageFiles = [
   },
 ];
 
-window.onload = function init() {
+window.onload = function () {
   //get all html elements into variables
+  const imageFileDropdown = document.querySelector("#imageFileDropdown");
+  const addImageButton = document.querySelector("#addImageButton");
+  const clearImagesButton = document.querySelector("#clearImagesButton");
+  const imageContainerDiv = document.querySelector("#imageContainerDiv");
+
   //define  your functions
+
+  function loadImageFileDropdown() {
+    for (const imageFile of imageFiles) {
+      let option = document.createElement("option");
+      option.value = imageFile.id;
+      option.innerText = imageFile.description;
+      imageFileDropdown.appendChild(option);
+    }
+  }
+
+  function addImage() {
+    const id = imageFileDropdown.value;
+    const imageFile = imageFiles.find((imageFile) => imageFile.id == id);
+
+    let image = document.createElement("img");
+    image.src = imageFile.path;
+    image.alt = imageFile.description;
+    imageContainerDiv.appendChild(image);
+  }
+
+  function clearImages() {
+    imageContainerDiv.innerHTML = "";
+  }
+
   //associate your functions with html element events
-  // HTMLElement.event = function
+  addImageButton.onclick = addImage;
+  clearImagesButton.onclick = clearImages;
+  loadImageFileDropdown();
 };

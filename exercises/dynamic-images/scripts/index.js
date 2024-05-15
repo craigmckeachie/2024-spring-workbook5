@@ -54,3 +54,13 @@ let imageFiles = [
     description: "placeholder 10",
   },
 ];
+
+
+window.onload = function(){
+  //get all html elements into variables
+
+  //define  your functions
+
+
+  //associate your functions with html element events
+}

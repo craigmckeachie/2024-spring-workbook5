@@ -91,5 +91,7 @@ window.onload = function () {
   //associate your functions with html element events
   addImageButton.onclick = addImage;
   clearImagesButton.onclick = clearImages;
+
+  //initial loading
   loadImageFileDropdown();
 };

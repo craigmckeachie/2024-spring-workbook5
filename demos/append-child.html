@@ -16,6 +16,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     />
+    <style>
+        main{
+            padding: 5rem;
+        }
+
+        .image{
+            padding: 2rem;
+
+        }
+    </style>
   </head>
   <body>
     <main>
@@ -39,6 +49,7 @@
           let image = document.createElement("img");
           image.src = "https://placehold.co/200";
           image.alt = "placeholder image";
+          image.classList.add("image")
           //append the child into the parent(put into inside)
           imagesContainer.appendChild(image);
         }

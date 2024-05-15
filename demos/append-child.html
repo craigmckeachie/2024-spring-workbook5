@@ -17,14 +17,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     />
     <style>
-        main{
-            padding: 5rem;
-        }
+      main {
+        padding: 5rem;
+      }
 
-        .image{
-            padding: 2rem;
-
-        }
+      .image {
+        padding: 2rem;
+      }
     </style>
   </head>
   <body>
@@ -33,6 +32,7 @@
         <!-- <img src="https://placehold.co/200" alt="placeholder image"  > -->
       </div>
       <button id="addImageButton">Add Image</button>
+      <button id="clearImageButton">Clear Images</button>
     </main>
     <script>
       "use strict";
@@ -42,6 +42,7 @@
         //get all your html elements
         let imagesContainer = document.querySelector("#imagesContainer");
         let addImageButton = document.querySelector("#addImageButton");
+        let clearImageButton = document.querySelector("#clearImageButton");
 
         //define your functions
         function addImage() {
@@ -49,13 +50,18 @@
           let image = document.createElement("img");
           image.src = "https://placehold.co/200";
           image.alt = "placeholder image";
-          image.classList.add("image")
+          image.classList.add("image");
           //append the child into the parent(put into inside)
           imagesContainer.appendChild(image);
         }
 
+        function clearImages() {
+          imagesContainer.innerHTML = "";
+        }
+
         //connect your functions to the html elements
         addImageButton.onclick = addImage;
+        clearImageButton.onclick = clearImages;
       };
     </script>
   </body>

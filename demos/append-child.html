@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Append Child</title>
+    
   </head>
   <body>
     <main>
       <div id="imagesContainer">
-        <img src="https://placehold.co/200" alt="placeholder image">
+        <!-- <img src="https://placehold.co/200" alt="placeholder image"> -->
       </div>
     </main>
     <script>
@@ -18,17 +19,14 @@
       window.onload = function init() {
         //get all your html elements
         //get the parent
-        let imagesContainer = document.querySelector("#imagesContainer")
-    
-
+        let imagesContainer = document.querySelector("#imagesContainer");
         //create the child
+        let image = document.createElement("img");
+        image.src = "https://placehold.co/200";
+        image.alt = "placeholder image";
 
         //append the child into the parent(put into inside)
-
-
-
-
-
+        imagesContainer.appendChild(image);
         //define your functions
         //connect your functions to the html elements
       };

@@ -1,0 +1,16 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+main {
+  padding: 3rem;
+}
+
+select,
+button {
+  padding: 0.25rem;
+}
+
+img {
+  padding-right: 2rem;
+  padding-block: 2rem;
+}

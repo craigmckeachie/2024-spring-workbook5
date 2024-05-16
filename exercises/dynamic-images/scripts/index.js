@@ -85,7 +85,7 @@ window.onload = function () {
   }
 
   function clearImages() {
-    imageContainerDiv.innerHTML = "";
+    imageContainerDiv.replaceChildren();
   }
 
   //associate your functions with html element events

@@ -117,7 +117,6 @@ let people = [
 
 window.onload = function () {
   // HTML element variables
-  const peopleTable = document.querySelector("#peopleTable");
   const peopleTableBody = document.querySelector("#peopleTableBody");
 
   //functions

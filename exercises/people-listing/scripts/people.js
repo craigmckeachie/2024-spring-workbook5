@@ -114,3 +114,36 @@ let people = [
     ipAddress: "19.60.1.101",
   },
 ];
+
+window.onload = function () {
+  // HTML element variables
+  const peopleTable = document.querySelector("#peopleTable");
+  const peopleTableBody = document.querySelector("#peopleTableBody");
+
+  //functions
+  function loadPeopleTable() {
+    for (const person of people) {
+      buildTableRow(person);
+    }
+  }
+
+  function buildTableRow(person) {
+    let row = peopleTableBody.insertRow();
+
+    let cell1 = row.insertCell();
+    cell1.innerText = person.firstName;
+
+    let cell2 = row.insertCell();
+    cell2.innerText = person.lastName;
+
+    let cell3 = row.insertCell();
+    cell3.innerText = person.email;
+
+    let cell4 = row.insertCell();
+    cell4.innerText = person.ipAddress;
+  }
+  //event handling
+
+  //initial loading
+  loadPeopleTable();
+};

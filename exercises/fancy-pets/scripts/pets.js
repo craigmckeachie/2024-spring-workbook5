@@ -70,7 +70,8 @@ window.onload = function () {
     let cardImage = document.createElement("img");
     cardImage.src = pet.image;
     cardImage.alt = pet.name;
-    cardImage.classList.add("card-img-top");
+    cardImage.classList.add("card-img-top", "card-img-fit");
+
     cardDiv.appendChild(cardImage);
 
     let cardBody = document.createElement("div");

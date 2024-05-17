@@ -1,5 +1,9 @@
 # Capstone Tips
 
+## Starter Project
+
+Use a copy of [this project](https://github.com/craigmckeachie/enjoy-the-outdoors) to git started.
+
 ## Parks Page
 
 ![Parks Page](image-3.png)

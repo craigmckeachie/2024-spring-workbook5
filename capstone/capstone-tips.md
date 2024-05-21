@@ -45,7 +45,7 @@ Use a copy of [this project](https://github.com/craigmckeachie/enjoy-the-outdoor
 
 7. Add radio buttons in a group for the search type (By Location or By Type). Hide and show the appropriate `select list\dropdown` when the page loads and when the search type selected changes.
 
-- Use the [Hide/Show Radio Demo]() [NOT AVAILABLE YET] as an example.
+- Use the [Hide/Show Radio Demo](../demos/hide-show-radio.html) as an example.
 
 ## Other
 
